@@ -70,3 +70,9 @@ The end to end pipeline puts all of the above processing steps together:
 The end-to-end pipeline is subsequently run on each frame of the project video:
 [Link to output video](https://github.com/adirery/CarND---Project-4/blob/master/project_output.mp4)
 
+
+# Discussion
+This project was again a very interesting project. I liked the fact that we took a problem that we solved in the beginning of the term and applied some learnings of this semester to solve it again, but better. There was a lot of techniques on the image processing side that I was not aware of (e.g. sobel transform).
+
+- Main challenges: The lecture to this project actually was really great. It contained all the individual bits & pieces that made up this project, so while the lecture itself and developing the solutions to the subproblems was challenging, the implementation of the final solution was much simpler. This made me realize again that breaking down a problem into digestable chunks makes the solving much easier. Ultimately there were a couple of points which were tricky, such as implementing the sliding window and optimizing the jumping of the lanes.
+- Outlook: I think the algorithm works well on rather straight roads with rather clear lines. As soon as you go into the trickier roads (see the challenge videos) the algorithm fails quite clearly which would be a disaster in a real-life scenario, i.e. the algorithm is not robust. There are many things that could be optimized in this regards - predicting the curvature of the lanes, making the averaging over multiple frames more dynamic, and optimizing the pre-processing pipeline with various techniques (e.g. looking at the R-part of the RGB), making the warping dynamic, etc. I hope there will be a chance to implement some of this in the next semester.
